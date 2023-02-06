@@ -11,6 +11,9 @@
     text-align: center;
     margin-top:23px
 }
+html{
+    background-image: url(https://thumbs.dreamstime.com/b/calculator-pen-table-calendar-blue-background-top-view-office-desk-copy-space-179944470.jpg);
+}
 
 table{
     margin: auto;
@@ -24,7 +27,7 @@ input{
     width: 456px;
 }
 
-button{
+.button{
     border-radius: 20px;
     font-size: 40px;
     background: #0e7c1b;
@@ -32,6 +35,29 @@ button{
     height: 90px;
     margin: 6px;
 }
+caption{
+    font-size: 30px;
+    text-align: center;
+    color: springgreen;
+}
+ 
+.enter{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #a6820d;
+    width: 108px;
+    height: 90px;
+    margin: 6px;
+}
+
+.of{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #e40606;
+    width: 115px;
+    height: 90px;
+    margin: 6px;
+ }
 
 .calculator{ 
     border: 4px solid #691313;
@@ -49,40 +75,41 @@ button{
             <input type="text" name="screen" id="screen">
             <table>
                 <tr>
-                    <td><button>(</button></td>
-                    <td><button>)</button></td>
-                    <td><button>C</button></td>
-                    <td><button>%</button></td>
+                    <td><button class="enter">(</button></td>
+                    <td><button class="enter">)</button></td>
+                    <td><button class="enter">C</button></td>
+                    <td><button class="enter">%</button></td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                    <td><button>X</button></td>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
+                    <td><button class="enter">X</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td><button>-</button></td>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
+                    <td><button class="enter">-</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td><button>+</button></td>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
+                    <td><button class="enter">+</button></td>
                 </tr>
                 <tr>
-                    <td><button>0</button></td>
-                    <td><button>.</button></td>
-                    <td><button>/</button></td>
-                    <td><button>Enter</button></td>
+                    <td><button class="button">0</button></td>
+                    <td><button class="enter">.</button></td>
+                    <td><button class="enter">/</button></td>
+                    <td><button class="of"><b>Enter</b></button></td>
                 </tr>
+<caption><u>Calculator</u></caption>
             </table>
         </div>
     </div>
-</body>
 
+</body>
 <script>
     let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
@@ -112,4 +139,3 @@ for (item of buttons) {
 }
  </script>
 </html>
-
